@@ -1,1 +1,22 @@
 /* Your style rules here */
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&display=swap');
+h1 {
+    font-family: 'Poiret One', cursive;
+    color:whitesmoke;
+    background-color:gray;
+    margin-right: 80%;
+    border:solid 5px turquoise;
+}
+h2 {
+    font-family: 'Poiret One', cursive;
+    color:whitesmoke;
+    background-color:gray;
+    display:inline-block;
+    margin-right: 92%;
+    border:solid 5px turquoise;
+}
+body { 
+    font-family: 'Open Sans', sans-serif;
+
+}
+

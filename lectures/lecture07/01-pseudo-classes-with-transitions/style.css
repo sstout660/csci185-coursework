@@ -40,12 +40,14 @@ div {
    text-decoration: none;
    padding: 5px 10px;
    display: inline-block;
+   transition: all 0.3s ease-out;
 }
 
 #demo1 a:hover,
 #demo1 a:focus {
    color: #333;
    background-color: #fff;
+   margin-left: 10px;
 }
 
 
@@ -69,7 +71,8 @@ div {
     color: #333;
     background-color: #fff;
     padding: 5px 20px;
-    transform: rotate(-10deg);
+    
+    transform: rotate(-360deg);
     font-size: 1.3em;
 }
 
