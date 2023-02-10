@@ -10,6 +10,7 @@ header {
     text-decoration:underline;
 }
     .navbar {
+
         padding: 15px;
         background-color: #93e8b3;
         display: flex;
@@ -23,6 +24,15 @@ header {
 body {
     margin: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    margin-left: 15vw;
+}
+
+h2 {
+    font-size: 25pt;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 p, a, li {
