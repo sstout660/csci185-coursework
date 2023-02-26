@@ -1,0 +1,14 @@
+1. What corrections did you have to make?
+I added alt tags to the pictures, and label tags to the inputs. There was a second step in hiding the labels to prevent redundancy.
+
+1. Do you think your website is usable if you turn off the CSS? Why or why not?
+
+Yes, after commenting out the CSS, the website is functionally the same. The accessability features are on the html.
+
+1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
+
+Yes
+
+
+
+Reminder: don't forget to include a screenshot of your Wave report and link to it from your homepage!

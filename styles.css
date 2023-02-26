@@ -1,25 +1,67 @@
-/* You're welcome to change any of this! */
-* {
-    box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    scroll-behavior:smooth;
+}
+body {
+    margin:0;
+}
+
+h1 {
+    font-family: 'Noticia Text', serif;
 }
 
 header {
-    font-size: large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    text-decoration:underline;
+    height:20vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
 }
-    .navbar {
 
-        padding: 15px;
-        background-color: #93e8b3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .navbar a, .navbar strong {
-        margin-right: 15px;
-    }
+header h1 {
+    grid-area: 1/2/1/4;
+    background-color:white;
+}
+
+#links {
+    height: 80vh;
+    width:100vw;
+}
+.navbar *{
+    border: solid black 
+}
+.navbar {
+    display:grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows:10vh 20vh 20vh 30vh;
+    row-gap:15px;
+    column-gap:15px;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-attachment: fixed;
+   background-image: url('images/cloudy-city.jpg');
+}
+
+
+
+#quiz-link {
+    grid-area: 2/2/2/2;
+}
+
+#tutorial-link {
+    grid-area:2/3/2/3;
+}
+
+#homework-link {
+    grid-area: 3/2/3/2;
+}
+
+#lecture-link {
+    grid-area:3/3/3/3;
+}
 
 body {
     margin: 25px;
