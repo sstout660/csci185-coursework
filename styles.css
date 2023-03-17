@@ -38,7 +38,7 @@ header h1 {
     grid-template-rows:10vh 20vh 20vh 30vh;
     row-gap:15px;
     column-gap:15px;
-    background-position:center center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
    background-attachment: fixed;
