@@ -1,4 +1,21 @@
+
+
 function addNumbers() {
+let num1 = document.querySelector('#num1').value;
+let num2 = document.querySelector('#num2').value;
+
+num1 = Number(num1);
+num2 = Number(num2);
+
+let output = num1 + num2;
+
+document.querySelector('#answer').innerHTML = output;
+
+
+
+
+
+
     // Your job: 
     // 1. Access the first number that the user typed in and store it
     //    as a variable.
@@ -11,14 +28,65 @@ function addNumbers() {
 }
 
 function subtractNumbers() {
-    // Same as above but subtract!
+    let num1 = document.querySelector('#num1').value;
+let num2 = document.querySelector('#num2').value;
+
+num1 = Number(num1);
+num2 = Number(num2);
+
+let output = num1 - num2;
+
+document.querySelector('#answer').innerHTML = output;
 }
 
 function multiplyNumbers() {
-    // Same as above but multiply!
+    let num1 = document.querySelector('#num1').value;
+    let num2 = document.querySelector('#num2').value;
+    
+    num1 = Number(num1);
+    num2 = Number(num2);
+    
+    let output = num1 * num2;
+    
+    document.querySelector('#answer').innerHTML = output;
 }
 
 function divideNumbers() {
-    // Same as above but divide!
+    let num1 = document.querySelector('#num1').value;
+    let num2 = document.querySelector('#num2').value;
+    
+    num1 = Number(num1);
+    num2 = Number(num2);
+    
+    let output = num1 / num2;
+    
+    document.querySelector('#answer').innerHTML = output;
 }
 
+function powerNumbers() {
+    let num1 = document.querySelector('#num1').value;
+    let num2 = document.querySelector('#num2').value;
+    
+    num1 = Number(num1);
+    num2 = Number(num2);
+    
+    let output = num1 ** num2;
+    
+    document.querySelector('#answer').innerHTML = output;
+}
+
+function remainderNumbers() {
+    let num1 = document.querySelector('#num1').value;
+    let num2 = document.querySelector('#num2').value;
+    
+    num1 = Number(num1);
+    num2 = Number(num2);
+    
+    let output = num1 % num2;
+    
+    document.querySelector('#answer').innerHTML = output;
+}
+
+function clearNumbers() {
+    
+}
