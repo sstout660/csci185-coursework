@@ -22,7 +22,12 @@ function mouseDragged(){
     const outline = document.querySelector('#outline').value;
 
     fill(color);
-    stroke(outline);
+    if(outline === 'none'){
+        noStroke();
+    }else{
+        stroke(outline);
+    }
+    
     if(shape == 'circle') {
         circle(mouseX, mouseY, size);
     }

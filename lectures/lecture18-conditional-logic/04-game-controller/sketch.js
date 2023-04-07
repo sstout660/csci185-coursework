@@ -3,10 +3,8 @@ let y = 200;
 let width = 50;
 let fillColor = 'white';
 
-let axr = 0;
-let axl = 0;
-let ayu = 0;
-let ayd = 0;
+let ax = 0
+let ay = 0
 
 const canvasWidth = window.innerWidth;
 const canvasHeight = window.innerHeight; 
@@ -24,29 +22,23 @@ function setup() {
 //KEYBOARD INPUT//
 ///////////////////
 ///////////////////
+setInterval(moveController, 0);
 function moveController(ev) {
     console.log(ev.code);
     
     if(ev.code == 'ArrowUp'){
-        ayu+=-2;
-        y+=ayu;
+        ay =0.5;
     } else {
-        ayu = 0;
+        ay=-0.5;
     }
 
     if(ev.code == 'ArrowDown'){
-        ayd+=2;
-        y+=ayd;
-    } else {
-        ayd = 0;
+        ay = -0.5;
     }
 
     if(ev.code == 'ArrowLeft'){
-        axl+=-2;
-        x+=axl;
-    } else {
-        axl = 0
-    }
+        
+    } 
 
     if(ev.code == 'ArrowRight'){
         axr+=2;
@@ -59,13 +51,29 @@ function moveController(ev) {
         width += 1;
     }
 
-    // redraw circle:
+   
+}
+
+
+ setInterval(moveObject, 0 );
+    
+   
+    function moveObject() {
+     x+=ax;
+     y-=ay;
+
+    //  if(ev.code !== 'ArrowUp') {
+    //     ay-=1;
+    //  }
+     if(ay<=0){
+        ay=0;
+     }
+
     clear();
     fill(fillColor);
     circle(x, y, width);
     drawGrid(canvasWidth, canvasHeight);
-}
-
+    }
 
 
 
@@ -74,3 +82,14 @@ document.addEventListener('keydown', moveController);
 
 //////////////////////////
 //////////////////////////
+
+
+// const min = 0;
+// const max = 100;
+
+// // Clamp number between two values with the following line:
+// const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+
+// clamp(-50, min, max); // Will return: 0
+// clamp(50, min, max);  // Will return: 50
+// clamp(500, min, max); // Will return: 100

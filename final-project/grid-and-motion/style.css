@@ -1,0 +1,9 @@
+body {
+    display:flex;
+    justify-content: center;
+    padding-top:25px;
+}
+main {
+    height: 650px;
+    border: solid black 3px;
+}
