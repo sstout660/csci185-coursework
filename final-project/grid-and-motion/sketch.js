@@ -13,22 +13,14 @@ let player = {
 function setup() {
     const canvasWidth = window.innerWidth;
     const canvasHeight = window.innerHeight; 
+
     createCanvas(1000, 650);
-
-    strokeWeight(5);
-    rect(0,550,1000,100);
-
-    strokeWeight(0);
-    fill('red');
-    
-
-
-    drawGrid(canvasWidth, canvasHeight);
+    // drawGrid(canvasWidth, canvasHeight);
 }
-// Draw function doesn't work outside of setup
-// Set timer/refresh rate
-// Ignore key looping delay
 
+
+
+document.addEventListener('keydown', moveController);
 function moveController(ev) {
     console.log(ev.code);
     
@@ -38,32 +30,42 @@ function moveController(ev) {
     
 
     if(ev.code == 'ArrowDown'){
-        
+        player.vY +=5;
     }
 
-    if(ev.code == 'ArrowLeft'){
-        
-    } 
+    if(ev.code == 'ArrowLeft') {
+            player.vX -=5;
+        }
 
     if(ev.code == 'ArrowRight'){
-       
+       player.vX +=5;
     } 
 
     if(ev.code == 'Space'){
        
     }
+}
 
-    clear();
-    // fill(fillColor);
-    // circle(x, y, width);
-    // drawGrid(canvasWidth, canvasHeight);
-    }
+while(player.vX != 0) {
+    player.x += 1;
+
+}
 
 function draw() {
-    frameRate(30);
+    
+    frameRate(60);
+    clear();
+    fill:('red');
     drawPlayer();
     
+    strokeWeight(4);
+    // noFill();
+    rect(0,550,1000,100);
+
+    
 }
+
+ 
 
 function drawPlayer() {
     fill:('red');
@@ -71,12 +73,6 @@ function drawPlayer() {
 }
 
 
-
-
-
-
-
-
-document.addEventListener('keydown', moveController);
-
-
+//fill not working
+// Ignore key looping delay
+//vX not updating with keydown
