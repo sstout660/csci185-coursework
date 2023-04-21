@@ -1,0 +1,20 @@
+1. Reflecting on your accomplishments [1pt]
+/////What did you accomplish this week (i.e. how’d it go)?/////
+
+This week I was able to implement smooth character control and physics. Getting started with correct input functions took a bit of time, but overall I am happy with how it's turning out so far.
+
+
+2. Reflecting on challenges [1pt]
+/////What took the most time / was the most challenging part of what you did? Do you feel stuck? How can you get unstuck? Is there any specific feedback that you would like from Sarah?
+
+The hardest part was figuring out what needed to be put in the draw function. In the beginning I was running separate functions with setInterval and getting issues with thing happening at different rates.
+
+3. Next steps [1pt]
+/////What will you turn in for your final deliverable. Please describe what you plan to accomplish.
+
+I'd like to create an intuitive way of implementing collision, as well as create a level with a start and end goal.
+
+4. Scope revision? [1pt]
+/////Given your experience this week, are you on track to deliver on what you proposed last week? If not, what adjustments to the scope of your project are you planning to make?
+
+Originally I wanted to implement a "create platforms" mechanic, but with how difficult collision has been I would rather spend time working on cool (and simple) ways to interact with the level.
