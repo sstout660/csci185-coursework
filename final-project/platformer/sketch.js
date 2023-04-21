@@ -32,7 +32,7 @@ function draw() {
    if (platforms[i].x <= player.x + player.width
     && player.x <= platforms[i].x + platforms[i].width 
     && platforms[i].y <= player.y + player.height - 7
-    && player.y <= platforms[i].y + platforms[i].height + 7
+    && player.y <= platforms[i].y + platforms[i].height - 2
     && player.vX < 0) {
     player.vX = 0;
     player.x = platforms[i].x + platforms[i].width;
@@ -43,7 +43,7 @@ function draw() {
     if (platforms[i].x <= player.x + player.width
         && player.x <= platforms[i].x + platforms[i].width 
         && platforms[i].y <= player.y + player.height - 7
-        && player.y <= platforms[i].y + platforms[i].height + 7
+        && player.y <= platforms[i].y + platforms[i].height - 2
         && player.vX > 0) {
         player.vX = 0;
         player.x = platforms[i].x- player.width;
@@ -53,8 +53,8 @@ function draw() {
 //Ground collision
     
     if (
-        platforms[i].x <= player.x + player.width-0.1
-        && player.x <= platforms[i].x + platforms[i].width-0.1
+        platforms[i].x <= player.x + player.width-1
+        && player.x <= platforms[i].x + platforms[i].width-1
         && platforms[i].y <= player.y + player.height 
         && player.y <= platforms[i].y + platforms[i].height 
         && player.vY  > 0) {
@@ -67,8 +67,8 @@ function draw() {
     
     // Top collision 
         if (
-            platforms[i].x <= player.x + player.width
-        && player.x <= platforms[i].x + platforms[i].width
+            platforms[i].x <= player.x + player.width-1
+        && player.x <= platforms[i].x + platforms[i].width-1
         && platforms[i].y <= player.y + player.height 
         && player.y <= platforms[i].y + platforms[i].height
             && player.vY  < 0) {
@@ -160,7 +160,7 @@ let platforms = [
 
     {
         x: 0,
-        y: 400,
+        y: 410,
         width: 100,
         height: 50
     }
