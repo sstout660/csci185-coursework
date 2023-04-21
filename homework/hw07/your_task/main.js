@@ -21,8 +21,8 @@ async function getTracks (term) {
         for (let i = 0; i < 5; i++) {
             const track = data[i]
             const template = `<section class="track-item preview" onclick ="loadTrack('${track.id}')">
-            <img src=${track.album.image_url}>
-            <i class="fas play-track fa-play" aria-hidden="true"></i>
+            <img src=${track.album.image_url} alt="Album img">
+            <i class="fas play-track fa-play" aria-hidden="false"></i>
             <div class="label">
                 <h2>
                 ${track.album.name}
@@ -47,7 +47,7 @@ async function getAlbums (term) {
         const album = data[i];
         const template = `<section class="album-card" id=${album.id}>
         <div>
-            <img src=${album.image_url}>
+            <img src=${album.image_url} alt = "Album cover">
             <h2>${album.name}</h2>
             <div class="footer">
                 <a href=${album.spotify_url} target="_blank">
@@ -70,7 +70,7 @@ async function getArtist (term) {
     const artist = data[0];
     const template = `<section class="artist-card" id=${artist.id}>
     <div>
-        <img src=${artist.image_url}>
+        <img src=${artist.image_url} alt="Artist Picture">
         <h2>${artist.name}</h2>
         <div class="footer">
             <a href=${artist.spotify_url} target="_blank">
@@ -81,7 +81,6 @@ async function getArtist (term) {
 </section>`;
 document.querySelector('#artist').innerHTML = template;
 };
-
 
 
 function loadTrack(trackId) {
