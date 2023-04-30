@@ -7,3 +7,11 @@ main {
     height: 650px;
     border: solid black 3px;
 }
+
+.win {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
